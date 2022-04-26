@@ -1,11 +1,12 @@
-import "./App.css";
 
-import React, { useState } from "react";
-
+import "./styles/general/main.scss";
+import Pages from "./pages/Pages";
+import React from "react";
 const App = () => {
   return (
     <div>
-      <h1 className="text-center py-5">Hello World</h1>
+      
+      <Pages />
     </div>
   );
 };

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Ethnocentric';
+  src: url(../../fonts/Ethnocentric/ethnocentric.otf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../../fonts/Poppins/Poppins.ttf);
+}
+
+.theme-background-first-layer {
+  width: 100%;
+  height: 100vh;
+  background-color: #00DA5D;
+  overflow: hidden;
+}
+
+.shape-TopRight {
+  width: 400px;
+  height: 400px;
+  right: -145px;
+  top: -170px;
+}
+
+.shape-TopLeft {
+  width: 220px;
+  height: 220px;
+  left: -60px;
+  top: -35px;
+}
+
+.shape-MidLeft {
+  width: 280px;
+  height: 280px;
+  left: -20px;
+  top: 60%;
+}
+
+.shape-MidRight {
+  width: 360px;
+  height: 360px;
+  right: -110px;
+  top: 30%;
+}
+
+.shape-BottomLeft {
+  width: 360px;
+  height: 360px;
+  left: -145px;
+  bottom: -6%;
+}
+
+.shape-BottomRight {
+  width: 430px;
+  height: 430px;
+  right: -100px;
+  bottom: -125px;
+}
+/*# sourceMappingURL=FirstBackgroundlayer.css.map */
