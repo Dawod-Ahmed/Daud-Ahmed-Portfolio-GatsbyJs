@@ -1,22 +1,3 @@
-
-$desktopSecondBp: 1650px;
-@mixin desktopSecondBpMixin {
-  @media (max-width: $desktopSecondBp) {
-    @content;
-  }
-}
-
-$desktopthirdBp: 1540px;
-@mixin desktopThridBpMixin {
-  @media (max-width: $desktopthirdBp) {
-    @content;
-  }
-}
-
-// ------ END  Breakpints  --------
-
-// ------  MIXINS  --------
-
 @font-face {
   font-family: "Ethnocentric";
   src: url(../../fonts/Ethnocentric/ethnocentric.otf);
@@ -29,6 +10,17 @@ $desktopthirdBp: 1540px;
 
 @function weight($weight-name) {
   @return map-get($font-weight, $weight-name);
+}
+
+@mixin desktopSecondBpMixin {
+  @media (max-width: $desktopSecondBp) {
+    @content;
+  }
+}
+@mixin desktopThridBpMixin {
+  @media (max-width: $desktopthirdBp) {
+    @content;
+  }
 }
 
 @mixin generalHeading($fontSize) {
@@ -162,7 +154,6 @@ $desktopthirdBp: 1540px;
   background-image: url($Img);
   background-repeat: no-repeat;
   background-size: 68%;
-
   background-position: center center;
   transition-duration: 0.2s;
   // &:hover {
@@ -191,3 +182,9 @@ $desktopthirdBp: 1540px;
   padding-right: $top;
   padding-left: $bottom;
 }
+@mixin elementSize($width, $height) {
+  width: $width;
+  height: $height;
+ 
+}
+

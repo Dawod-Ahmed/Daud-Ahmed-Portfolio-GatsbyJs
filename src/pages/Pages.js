@@ -1,11 +1,23 @@
 import React from "react";
-import { Home, ThemeFirstLayer } from "./components/pagesExport";
+import {
+  Home,
+  ThemeFirstLayer,
+  AboutMe,
+  Portfolio,
+  Services,
+} from "./components/pagesExport";
+
 const Pages = () => {
   return (
     <>
       <ThemeFirstLayer />
       <div className="PagesParent ">
-        <Home />
+        {/* <h1>Pages</h1> */}
+
+        {/* <Home /> */}
+        {/* <AboutMe /> */}
+        {/* <Portfolio /> */}
+        <Services />
       </div>
     </>
   );

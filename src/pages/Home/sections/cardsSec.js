@@ -7,14 +7,16 @@ const cardsSec = () => {
       <section className="w-100 cards-section ">
         <div className="main-cards-parent d-flex justify-content-center">
           <CardComponent
-            claasname="ui-ux-design"
+            className="ui-ux-design"
+            cardImageClassname="ui-ux-design"
             title="UI/UX"
             title1="Design"
             para="Lorem Ipsum is simply dummy of printing and typesetting industry Lorem Ipsum."
             projects="20"
           />
           <CardComponent
-            claasname="front-end-design"
+            className="front-end-design"
+            cardImageClassname="front-end-design"
             title="Front-End 
 "
             title1="Development"
@@ -22,7 +24,8 @@ const cardsSec = () => {
             projects="20"
           />
           <CardComponent
-            claasname="full-stack-design"
+            className="full-stack-design"
+            cardImageClassname="full-stack-design"
             title="Full-Stack"
             title1="Development "
             para="Lorem Ipsum is simply dummy of printing and typesetting industry Lorem Ipsum."
