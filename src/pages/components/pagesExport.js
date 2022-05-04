@@ -43,6 +43,9 @@ export { default as CardComponent } from "../components/cards";
 export { default as ExperienceCard } from "./experienceCard";
 export { default as SkillsComponent } from "./skillsIcons";
 export { default as ProjectComponent } from "./project";
+export { default as HandleProject } from "./handleProject";
+
+
 
 // -------End Reuseable Components Exports----------
 

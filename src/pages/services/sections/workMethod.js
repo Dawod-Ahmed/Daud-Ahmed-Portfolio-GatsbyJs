@@ -1,5 +1,6 @@
 import React from "react";
-import { WorkMehtodArrow } from "../../../assets/assets";
+import { HandleProject } from "../../components/pagesExport";
+
 const ServeQuality = () => {
   return (
     <>
@@ -17,53 +18,27 @@ const ServeQuality = () => {
           </p>
         </div>
         <div className="project-cycle-container">
-          <div className="project-cycle-parent">
-            <div className="project-cycle-img cycle-img "></div>
-            <p className="project-cycle-heading text-center">
-              1. Understanding Of <br />
-              Requirements
-            </p>
-            <p className="project-cycle-para text-center">
-              Gathering Data & Understanding Your Requirements.
-            </p>
-            <img src={WorkMehtodArrow} className="project-cycle-arrow" alt="" />
-          </div>
-
-          <div className="project-cycle-parent">
-            <div className="project-cycle-img cycle-img "></div>
-            <p className="project-cycle-heading text-center">
-              1. Understanding Of <br />
-              Requirements
-            </p>
-            <p className="project-cycle-para text-center">
-              Gathering Data & Understanding Your Requirements.
-            </p>
-            <img src={WorkMehtodArrow} className="project-cycle-arrow" alt="" />
-          </div>
-
-          <div className="project-cycle-parent">
-            <div className="project-cycle-img cycle-img "></div>
-            <p className="project-cycle-heading text-center">
-              1. Understanding Of <br />
-              Requirements
-            </p>
-            <p className="project-cycle-para text-center">
-              Gathering Data & Understanding Your Requirements.
-            </p>
-            <img src={WorkMehtodArrow} className="project-cycle-arrow" alt="" />
-          </div>
-
-          <div className="project-cycle-parent">
-            <div className="project-cycle-img cycle-img "></div>
-            <p className="project-cycle-heading text-center">
-              1. Understanding Of <br />
-              Requirements
-            </p>
-            <p className="project-cycle-para text-center">
-              Gathering Data & Understanding Your Requirements.
-            </p>
-            <img src={WorkMehtodArrow} className="project-cycle-arrow" alt="" />
-          </div>
+          <HandleProject
+            phaseTitle1="1. Understanding Of"
+            phaseTitle2="Requirements"
+            phaseDetail=" Gathering Data & Understanding Your Requirements."
+          />
+          <HandleProject
+            phaseTitle1="2. Development And"
+            phaseTitle2=" Updates"
+            phaseDetail="Start Development  & Give You Updates on Project Progress  on Daily Basis"
+          />
+          <HandleProject
+            phaseTitle1="3. Test Your"
+            phaseTitle2="Project"
+            phaseDetail="Test Your Project To check ( On All Major Browsers, All devices' compatibility, Back-End Tests, Bugs-Free Project) to Ensure Quality Work."
+          />
+          <HandleProject
+            phaseTitle1="4. Deliver Your"
+            phaseTitle2="Project"
+            phaseDetail="Give Project for Review & Deliver Your Project.
+            "
+          />
         </div>
       </section>
     </>
