@@ -13,7 +13,7 @@ const ServeQuality = () => {
           </h1>
           <p className="general-text project-cycle-para text-center">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the 1500s, when an unknown printer
+            industry. Lorem Ipsum has been the 1500s. when an unknown printer
             took..
           </p>
         </div>
