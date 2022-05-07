@@ -164,13 +164,13 @@ const Freelancing = () => {
                 />
 
                 {/* <div className="textareainpput-parent form-floating ">
-                  <Field
-                    type="textarea"
-                    as="textarea"     className={`textarea-input form-control form-textarea  textarea ${
+                  <Field     
+                    type="textarea" 
+                    as="textarea"  className={`textarea-input form-control form-textarea  textarea ${
                       errors.detail && touched.detail ? "border-danger" : ""
                     }`}
-                    name="detail"
-                    id="floatingtextareaInput"
+                      name="detail"
+                      id="floatingtextareaInput"
                     placeholder="Please write details here"
                   />
                   <label
