@@ -163,7 +163,7 @@ const Freelancing = () => {
                   placeholder="Please write details here"
                 />
 
-                {/*<div className="textareainpput-parent form-floating ">
+                {/*  <div className="textareainpput-parent form-floating ">
                   <Field
                     type="textarea"
                     as="textarea"     className={`textarea-input form-control form-textarea  textarea ${
