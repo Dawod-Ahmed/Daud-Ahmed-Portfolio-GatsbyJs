@@ -4,6 +4,7 @@ export { default as Home } from "../Home/home";
 export { default as AboutMe } from "../aboutUs/aboutMe";
 export { default as Portfolio } from "../portfolio/portfolio";
 export { default as Services } from "../services/services";
+export { default as Contact } from "../contact/contact";
 
 
 
@@ -32,6 +33,11 @@ export { default as ProjectSection} from "../portfolio/sections/projectsSection"
 export { default as ServeQuality} from "../services/sections/serveQuality";
 export { default as OfferServices} from "../services/sections/offerServices";
 export { default as WorkMethod} from "../services/sections/workMethod";
+export { default as FreelanicngSection} from "../services/sections/freelancingSection";
+
+// ----Services Sections
+
+export { default as ContactFrom} from "../contact/sections/Form";
 
 
 
@@ -44,6 +50,7 @@ export { default as ExperienceCard } from "./experienceCard";
 export { default as SkillsComponent } from "./skillsIcons";
 export { default as ProjectComponent } from "./project";
 export { default as HandleProject } from "./handleProject";
+export { default as FormField } from "./formFields";
 
 
 

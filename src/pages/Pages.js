@@ -5,6 +5,7 @@ import {
   AboutMe,
   Portfolio,
   Services,
+  Contact,
 } from "./components/pagesExport";
 
 const Pages = () => {
@@ -17,7 +18,8 @@ const Pages = () => {
         {/* <Home /> */}
         {/* <AboutMe /> */}
         {/* <Portfolio /> */}
-        <Services />
+        {/* <Services /> */}
+        <Contact />
       </div>
     </>
   );

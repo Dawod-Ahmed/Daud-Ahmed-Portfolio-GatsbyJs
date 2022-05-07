@@ -44,6 +44,7 @@ export { default as project4 } from "./Portfolio/project4.png";
 
 export { default as SelfServicesImage } from "./Services/SelfServicesImage.png";
 export { default as WorkMehtodArrow } from "./Services/Icons/workMehtodArrow.svg";
+export { default as FreelancingImage } from "./Services/freelancing.png";
 
 // export { default as project4 } from "./";
 

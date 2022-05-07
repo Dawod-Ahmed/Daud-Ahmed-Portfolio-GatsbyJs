@@ -22,6 +22,7 @@
     @content;
   }
 }
+
 @mixin desktopThridBpMixin {
   @media (max-width: $desktopthirdBp) {
     @content;
@@ -34,6 +35,7 @@
   font-weight: weight(bold);
   font-family: "Ethnocentric", sans-serif;
 }
+
 // 27
 @mixin generalHeadingOne($fontSize) {
   font-size: $fontSize;
@@ -111,6 +113,7 @@
   color: $theme-green-color;
   transition-duration: 0.2s;
   padding-bottom: 10px;
+
   &:hover {
     background-color: $button-hover-color;
     color: $white-text;
@@ -123,6 +126,7 @@
   background-size: 35px 35px;
   padding-bottom: 5px;
   background-position: $backPosition center;
+
   &:hover {
     background-image: url($imgHover);
   }
@@ -133,6 +137,7 @@
   background-repeat: no-repeat;
   background-size: $Size;
   background-position: $backPosition;
+
   center &:hover {
     background-image: url($imgHover);
   }
@@ -144,6 +149,7 @@
   background-size: $Size;
   background-position: center center;
   transition-duration: 0.2s;
+
   &:hover {
     background-image: url($imgHover);
   }
@@ -154,6 +160,7 @@
   font-weight: weight($weight);
   color: $color;
   font-family: "Poppins", sans-serif;
+
   &:hover {
     color: $hoverColor;
   }
@@ -168,6 +175,7 @@
   border-radius: 30px;
   background-color: $cards-background-color;
   transition-duration: 0.2s;
+
   &:hover {
     background-color: $cards-hover-color;
   }
@@ -194,6 +202,7 @@
   height: 440px;
   background-color: $cards-background-color;
   transition-duration: 0.2s;
+
   &:hover {
     background-color: $cards-hover-color;
     color: $white-text;
@@ -269,189 +278,69 @@ $cards-hover-color: #00da5d;
 
 // -----------------------------------
 
-// --------------- Serve Quality Section--------------------
-
-.serve-qulaity-section {
+// --------------- Form Section  --------------------
+.contact-section-parent {
   @include flexRow(space-between, center);
-  overflow: hidden;
+  height: 730px;
 }
-.serve-quality-part-parent {
-  @include flexColumn(center, start);
-  padding-left: 60px;
-}
-
-.serve-quality-left-part {
-  position: relative;
-  @include flexRow(center, space-between);
-  @include elementSize(1800px, 620px);
-}
-.self-services-image {
-  position: absolute;
-  bottom: -20px;
-}
-
-.s-down-arrow {
-  position: relative;
-  align-self: center;
-  top: 50px;
-}
-.serve-quality-icons-parent {
-  @include flexColumn(space-between, center);
-  @include elementSize(auto, 300px);
-  position: relative;
-  top: 138px;
-  left: 217px;
-}
-
-.s-skill-icon {
-  width: 90px;
-}
-.s-react-icon {
-  width: 80px;
-}
-
-// -------  Offer Services  --------------------------------
-
-.offer-servcies-left-part {
-  @include flexColumn(center, start);
-}
-.serve-qulaity-section {
-  @include flexRow(space-between, center);
-}
-
-.services-carsds-parent {
-  @include flexRow(end, null);
-  flex-wrap: wrap;
-}
-
-.offer-servcies-left-part {
-  width: 80%;
-}
-
-.cards-parent {
-  width: 300px;
-}
-
-.services-card:nth-child(2),
-.services-card:nth-child(4) {
-  @include HorizontalMargin(0!important, 0!important);
-}
-
-.services-card {
-  @include HorizontalPadding(18px, 18px);
-  min-width: unset;
-}
-
-.services-card .completed-projects {
-  display: none;
-}
-.services-card .cards-para {
-  margin-bottom: 0px !important;
-}
-
-// -------  Offer Services  --------------------------------
-
-.work-method-section,
-.project-cycle-heading-parent,
-.project-cycle-parent {
-  @include flexCenterColumn();
-}
-.project-cycle-heading-parent {
-  @include HorizontalPadding(150px, 150px);
-}
-.project-cycle-container {
-  @include flexRow(space-between, start);
-  flex-wrap: wrap;
-  width: 100%;
-  padding-top: 30px;
-}
-.project-cycle-parent {
-  position: relative;
-  @include elementSize(300px, auto);
-  @include VerticalMargin(20px, 20px);
-  @include HorizontalPadding(20px, 20px);
-}
-.project-cycle-arrow {
-  position: absolute;
-  top: 20%;
-  right: -7%;
-}
-.project-cycle-img {
-  @include elementSize(150px, 150px);
-  border: 3px solid $theme-green-color;
-  border-radius: 50%;
-  transition-duration: 0.2s;
-  @include VerticalMargin(0, 25px);
-  &:hover {
-    background-color: $theme-green-color;
-  }
-}
-
-.requirements {
-  @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/toDo.svg",
-    "../assets/Services/Icons/workMethod/toDoHover.svg",
-    47%
-  );
-}
-.development {
-  @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/devUpdates.svg",
-    "../assets/Services/Icons/workMethod/devUpdatesHover.svg",
-    55%
-  );
-}
-.testing {
-  @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/testing.svg",
-    "../assets/Services/Icons/workMethod/testingHover.svg",
-    55%
-  );
-}
-.deliver {
-  @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/deliver.svg",
-    "../assets/Services/Icons/workMethod/deliverHover.svg",
-    75%
-  );
-}
-.project-cycle-heading {
-  @include generalMedumSizeText(25px);
-  color: $white-text;
-}
-.project-cycle-para {
-  @include generalText(22px);
-}
-.project-cycle-parent:nth-child(4) .project-cycle-arrow {
-  display: none;
-}
-
-// ------------  Freelanicng Section ---------------
-
-.freelancing-left-content {
-  @include flexColumn(center, start);
-  background-color: $theme-green-color;
-  width: 48%;
-}
-.freelancing-section-parent {
-  @include flexRow(space-between, center);
-  background-color: $theme-green-color;
-  padding-right: 0;
-}
-
-.freelancin-btn {
+.contact-left-content {
+  @include flexColumn(start, start);
   background-color: $theme-seconds-background-color;
-}
-.freelancing-heading-one,
-.freelancing-heading-two,
-.freelancing-para,
-.freelancin-btn {
-  color: $white-text;
-}
-.freelancing-right-img {
-  width: 50%;
-}
-.freelancing-img {
-  width: 100%;
+  @include elementSize(48%, 100%);
   height: 100%;
+  padding-top: 120px;
+}
+
+.open-for-porject {
+  @include elementSize(160px, 160px);
+  @include HorizontalPadding(21px, 21px);
+
+  top: 50%;
+  right: -80px;
+
+  transform: rotate(40deg);
+  background-color: $white-text;
+
+  @include generalMedumSizeText(20px);
+  color: rgb(0, 0, 0);
+}
+
+.main-form-parent {
+  @include flexColumn(center, end);
+}
+.floatinglbl {
+  color: $general-normalSize-text-color;
+}
+.form-btn {
+  align-self: flex-start;
+}
+
+.contact-right-form {
+  @include elementSize(42%, 100%);
+  padding-left: 0;
+  padding-top: 60px;
+}
+
+.input {
+  // @include elementSize(100%, 70px!important);
+  font-size: 26px;
+}
+
+.floatinglbl {
+  font-size: 20px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  transform: scale(0.85) translateY(-1.2rem) translateX(0.15rem);
+}
+
+.detail-input {
+  border: 1px solid #dee2e6 !important;
+  min-height: 140px !important;
+  max-height: 260px !important;
 }

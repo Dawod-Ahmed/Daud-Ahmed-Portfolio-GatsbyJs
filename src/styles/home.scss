@@ -1,5 +1,5 @@
-@import "../general/variables.scss";
-@import "../general/mixins.scss";
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
 
 // ------------  Universal  Styling  ---------------
 
@@ -12,7 +12,10 @@
 .projects-section,
 .serve-qulaity-section,
 .serve-qulaity-section,
-.work-method-section {
+.work-method-section,
+.freelancing-section-parent,
+.contact-left-content,
+.contact-right-form {
   @include sectionHorizontalPadding(50px, 50px);
 }
 
