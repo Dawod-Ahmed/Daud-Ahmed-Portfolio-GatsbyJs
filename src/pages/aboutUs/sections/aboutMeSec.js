@@ -1,9 +1,9 @@
 import React from "react";
-import { AboutDaud, AboutImageShadow } from "../../../assets/assets";
+import { AboutDaud, AboutImageShadow,AboutBackImg } from "../../../assets/assets";
 const AboutMe = () => {
   return (
     <>
-      <section className="about-me-section d-flex justify-content-between ali">
+      <section className="about-me-section d-flex justify-content-between ali position-relative">
         <div className="about-left-img-part">
           <img src={AboutDaud} alt="" className="about-self-img" />
           <img
@@ -30,6 +30,7 @@ const AboutMe = () => {
           </p>
           <button className="cv-btn btn">Resume</button>
         </div>
+        
       </section>
     </>
   );

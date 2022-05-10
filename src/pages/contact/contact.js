@@ -1,15 +1,15 @@
 import React from "react";
-import {
-  ContactFrom
-} from "../components/pagesExport";
-const Services = () => {
+import { ContactForm, Faqs } from "../components/pagesExport";
+const ContactPage = () => {
   return (
     <>
       <main className="theme-background-second-layer d-flex-direction">
-      <ContactFrom/>
+        <ContactForm />
+        <Faqs />
+        {/* <h1>Hweewe</h1> */}
       </main>
     </>
   );
 };
 
-export default Services;
+export default ContactPage;

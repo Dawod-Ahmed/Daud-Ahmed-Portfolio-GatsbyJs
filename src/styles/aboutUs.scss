@@ -267,6 +267,11 @@ $cards-hover-color: #00da5d;
   transform: rotate(3deg);
 }
 
+.aboutme-background-text {
+  top: -18%;
+  width: 92%;
+}
+
 // -------------Experiennce  Section -----------
 
 .experience-section {
@@ -327,7 +332,7 @@ $cards-hover-color: #00da5d;
 }
 
 .skill-img {
-  @include elementSize(70px, 70px);
+  width: 65%;
 }
 .skills-img-div {
   @include elementSize(150px, 150px);
@@ -339,5 +344,3 @@ $cards-hover-color: #00da5d;
   @include generalMedumSizeText(22px);
   color: $white-text;
 }
- 
-

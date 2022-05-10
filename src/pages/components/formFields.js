@@ -11,7 +11,9 @@ const FormFields = (props) => {
           as={name === "detail" ? "textarea" : ""}
           //   as="textarea"
           type={type}
-          className={`bg-transparent border-0 border-bottom input form-control text-white ${className}  `}
+          className={`bg-transparent ${className} ${
+            name === "detail" ? "border" : "border-0 border-bottom"
+          } input form-control text-white   `}
           name={name}
           id={id}
           placeholder={placeholder}

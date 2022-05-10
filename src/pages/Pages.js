@@ -5,21 +5,21 @@ import {
   AboutMe,
   Portfolio,
   Services,
-  Contact,
+  ContactPage,
 } from "./components/pagesExport";
 
 const Pages = () => {
   return (
     <>
-      <ThemeFirstLayer />
+      <ThemeFirstLayer />+
       <div className="PagesParent ">
         {/* <h1>Pages</h1> */}
 
         {/* <Home /> */}
-        {/* <AboutMe /> */}
+        <AboutMe />
         {/* <Portfolio /> */}
         {/* <Services /> */}
-        <Contact />
+        {/* <ContactPage /> */}
       </div>
     </>
   );

@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FormField } from "../../components/pagesExport";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-
+import { ContactRightArrow } from "../../../assets/assets";
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
   email: Yup.string().email("Email is Invalid").required("Email is required"),
   subject: Yup.string().required("Subject is required"),
-
   detail: Yup.string().required("Detail is required"),
 });
 
-const Freelancing = () => {
+const ContactForm = () => {
   return (
     <>
       <section className="contact-section-parent">
@@ -19,17 +18,24 @@ const Freelancing = () => {
           <h1 className="heading  freelancing-heading">
             <span className="heading-first">Let's</span>
             {/* <img src="" alt="" /> */}
+            <img
+              src={ContactRightArrow}
+              alt="img"
+              className="contact-form-right-icon px-5 pb-3"
+            />
             <br />
             <span className="heading-second ">Connect</span>
           </h1>
-          <p className="general-text pt-3 pb-5">
+          <p id="testpara" className="general-text pt-3 pb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the 1500s, when an unknown printer
             took..
           </p>
+
           <div className="open-for-porject position-absolute rounded-circle d-flex justify-content-center align-items-center text-center p-2">
             Open for new project{" "}
           </div>
+          <div className="background-text">Inquires</div>
         </div>
 
         <div className="contact-right-form">
@@ -59,6 +65,7 @@ const Freelancing = () => {
                   id="floatingNameInput"
                   placeholder="Name"
                 />
+
                 {/* <div className="nameinpput-parent form-floating ">
                   <Field
                     type="text"
@@ -155,7 +162,7 @@ const Freelancing = () => {
 
                 <FormField
                   type="text"
-                  className={`detail-input  ${
+                  className={`detail-input ${
                     errors.detail && touched.detail ? "border-danger" : ""
                   }`}
                   name="detail"
@@ -185,7 +192,7 @@ const Freelancing = () => {
                   ) : null}
                 </div> */}
 
-                <button type="submit" className="btn form-btn">
+                <button type="submit" className="btn form-btn mx-2">
                   Send
                 </button>
               </Form>
@@ -197,4 +204,4 @@ const Freelancing = () => {
   );
 };
 
-export default Freelancing;
+export default ContactForm;

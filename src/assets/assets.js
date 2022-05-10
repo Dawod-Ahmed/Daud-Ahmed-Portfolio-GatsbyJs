@@ -10,10 +10,11 @@ export { default as TopRight } from "./BackgroundShapes/TopRight.svg";
 export { default as homeSrcolldownButton } from "./Home/Icons/homeSrcolldownButton.svg";
 export { default as DaudImg } from "./Home/Images/DaudAhmed.png";
 
-// ----- About Us  Page------
+// ----- About Me  Page------
 
 // export { default as AboutMeVideo } from "./About/Sample.mp4";
 export { default as AboutImageShadow } from "./About/aboutSelfShadow.png";
+export { default as AboutBackImg } from "./About/AboutBackImg.svg";
 export { default as AboutDaud } from "./About/Daud.png";
 export { default as xd } from "./About/icons/skills icons/xd.svg";
 export { default as adobephotoshop } from "./About/icons/skills icons/adobephotoshop.svg";
@@ -47,6 +48,14 @@ export { default as WorkMehtodArrow } from "./Services/Icons/workMehtodArrow.svg
 export { default as FreelancingImage } from "./Services/freelancing.png";
 
 // export { default as project4 } from "./";
+
+// ---------------------------------
+
+// ------  Contact Page  -------
+
+export { default as ContactRightArrow } from "./Contact/icons/contactrightArrow.svg";
+export { default as FaqsDesktopView } from "./Contact/images/Desktop.svg";
+export { default as FaqsMobileView } from "./Contact/images/Mobile_View.svg";
 
 // ---------------------------------
 

@@ -3,7 +3,7 @@ import React from "react";
 const ShortIntro = () => {
   return (
     <>
-      <section className="h-second-sec d-flex justify-content-between">
+      <section className="h-second-sec d-flex justify-content-between position-relative">
         <div className="h-sec-left-part d-flex flex-column align-items-start justify-content-between">
           <div className="query-txt-parent">
             <p className="problem-solver-txt mt-1 mb-0">
@@ -13,7 +13,7 @@ const ShortIntro = () => {
               Any Type Of Query <br />& Discussion.
             </p>
           </div>
-          <button className="contact-btn btn mb-3">Contact With Me</button>
+          <button className="contact-btn btn mb-3">Faq's & Contact</button>
         </div>
         <div className="h-sec-right-part d-flex flex-column justify-content-between">
           <p className="short-about-para">
@@ -36,6 +36,9 @@ const ShortIntro = () => {
               </span>
             </div>
           </div>
+        </div>
+        <div className="background-text position-absolute home-background-text">
+          Experiance
         </div>
       </section>
     </>

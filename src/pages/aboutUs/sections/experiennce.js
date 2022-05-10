@@ -1,9 +1,15 @@
 import React from "react";
 import { ExperienceCard } from "../../components/pagesExport";
+import { AboutBackImg } from "../../../assets/assets";
 const experiennceSection = () => {
   return (
     <>
-      <section className="experience-section d-flex  flex-column justify-content-center align-items-center">
+      <section className="experience-section d-flex  flex-column justify-content-center align-items-center position-relative">
+        <img
+          src={AboutBackImg}
+          alt="img"
+          className="position-absolute aboutme-background-text mx-auto"
+        />
         <h1 className="heading my-5">
           <span className="heading-first">Experiance &</span>
           <br />

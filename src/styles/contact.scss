@@ -13,6 +13,11 @@
   src: url(../fonts/Poppins/Poppins.ttf);
 }
 
+@font-face {
+  font-family: "Hei_Reina";
+  src: url(../fonts/hei-reina-cufonfonts/HeiReinaRegular-PKXem.ttf);
+}
+
 @function weight($weight-name) {
   @return map-get($font-weight, $weight-name);
 }
@@ -281,7 +286,7 @@ $cards-hover-color: #00da5d;
 // --------------- Form Section  --------------------
 .contact-section-parent {
   @include flexRow(space-between, center);
-  height: 730px;
+  height: 750px;
 }
 .contact-left-content {
   @include flexColumn(start, start);
@@ -340,7 +345,84 @@ $cards-hover-color: #00da5d;
 }
 
 .detail-input {
-  border: 1px solid #dee2e6 !important;
+  // border: 1px solid #dee2e6 !important;
   min-height: 140px !important;
-  max-height: 260px !important;
+  max-height: 200px !important;
+}
+.background-text {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 220px;
+  color: #29313c;
+  font-weight: weight(medium);
+  font-family: "Hei_Reina", sans-serif;
+  transform: rotate(-23deg);
+  bottom: 75px;
+}
+
+// -------------------------
+
+.accordion-section {
+  @include flexRow(space-between, start);
+}
+
+.accordion-parent {
+  @include flexColumn("", end);
+  align-self: center;
+  width: 63%;
+}
+
+.accordion-button {
+  @include generalText(22px);
+  @include flexRow(space-between, center);
+  @include HorizontalPadding(0, "");
+  @include VerticalPadding(0, 0);
+  color: $white-text !important;
+  background-color: $theme-seconds-background-color;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.expander-parent {
+  background: $theme-green-color;
+  @include elementSize("", 100px);
+  min-width: 15%;
+}
+
+.expander {
+  @include elementSize(27px, 4px);
+  background-color: $white-text;
+}
+
+.expanderY {
+  transform: rotate(90deg);
+  transition-duration: 0.2s;
+}
+.expanderX {
+  position: relative;
+  top: 3px;
+}
+.activeAccordion {
+  transform: rotateY(90deg);
+}
+
+.accordion-button:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #0d6efd40;
+}
+.accordion-button:not(.collapsed) {
+  color: $white-text !important;
+  background-color: $theme-seconds-background-color;
+}
+.accordion-body {
+  background-color: #04045f;
+  color: #ffffff;
+}
+
+.faqs-img {
+  width: 340px;
 }

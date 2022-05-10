@@ -15,7 +15,8 @@
 .work-method-section,
 .freelancing-section-parent,
 .contact-left-content,
-.contact-right-form {
+.contact-right-form,
+.accordion-section {
   @include sectionHorizontalPadding(50px, 50px);
 }
 
@@ -152,13 +153,21 @@
   color: $white-text;
 }
 
+.home-background-text {
+  top: 22%;
+  left: 0%;
+}
+
 // -------Universal Media Queries-------
 
 .problem-solver-txt,
 .query-type-text {
   width: max-content;
 }
-
+.h-sec-right-part,
+.h-sec-left-part {
+  z-index: 1;
+}
 .h-sec-right-part {
   width: 750px;
 }
@@ -176,8 +185,7 @@
 .short-about-para {
   margin: 4.5rem 0rem;
 }
-.general-text {
-}
+
 // ---------- Home  Cards Section-------------------
 
 .cards-section {
