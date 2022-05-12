@@ -9,6 +9,12 @@ export { default as TopRight } from "./BackgroundShapes/TopRight.svg";
 
 export { default as homeSrcolldownButton } from "./Home/Icons/homeSrcolldownButton.svg";
 export { default as DaudImg } from "./Home/Images/DaudAhmed.png";
+export { default as ReviewImage1 } from "./Home/Images/review_image1.svg";
+export { default as ReviewImage2 } from "./Home/Images/review_image2.svg";
+export { default as ReviewImage3 } from "./Home/Images/review_image3.svg";
+export { default as ReviewImage4 } from "./Home/Images/review_image4.svg";
+export { default as ReviewImage5 } from "./Home/Images/review_image5.svg";
+export { default as ReviewImage6 } from "./Home/Images/review_image6.svg";
 
 // ----- About Me  Page------
 

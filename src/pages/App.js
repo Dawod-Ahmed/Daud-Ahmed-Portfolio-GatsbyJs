@@ -1,5 +1,5 @@
-import "./styles/general/main.scss";
-import Pages from "./pages/Pages";
+import "../styles/general/main.scss";
+import Pages from "./Pages";
 import React from "react";
 const App = () => {
   return (

@@ -3,20 +3,22 @@
 
 // ------------  Universal  Styling  ---------------
 
-.cards-section,
-.hero-section,
-.h-second-sec,
-.about-me-section,
-.experience-section,
-.skill-section,
-.projects-section,
-.serve-qulaity-section,
-.serve-qulaity-section,
-.work-method-section,
-.freelancing-section-parent,
-.contact-left-content,
-.contact-right-form,
-.accordion-section {
+// .cards-section,
+// .hero-section,
+// .h-second-sec,
+// .testimonials-section,
+// .about-me-section,
+// .experience-section,
+// .skill-section,
+// .projects-section,
+// .serve-qulaity-section,
+// .serve-qulaity-section,
+// .work-method-section,
+// .freelancing-section-parent,
+// .contact-left-content,
+// .contact-right-form,
+// .accordion-section
+section {
   @include sectionHorizontalPadding(50px, 50px);
 }
 
@@ -253,4 +255,11 @@
 }
 .completed-projects {
   @include font(22, "regular", $theme-green-color, #ffffff);
+}
+
+// -------------  Testinmonials section ----------------------
+
+.testimonials-image {
+  width: 200px;
+  height: 800px;
 }

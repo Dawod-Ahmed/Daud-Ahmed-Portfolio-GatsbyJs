@@ -13,6 +13,7 @@ export { default as ContactPage } from "../contact/contact";
 export { default as HeroSection } from "../Home/sections/hero";
 export { default as ShortIntroSection } from "../Home/sections/shortIntroSec";
 export { default as HomeCardsSec } from "../Home/sections/cardsSec";
+export { default as TestimonialsSec } from "../Home/sections/testimonials";
 
 // ----About Sections
 export { default as AboutvideoSec } from "../aboutUs/sections/videoSection";

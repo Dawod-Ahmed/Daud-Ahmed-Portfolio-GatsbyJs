@@ -2,7 +2,7 @@ import React from "react";
 import {
   HeroSection,
   ShortIntroSection,
-  HomeCardsSec,
+  HomeCardsSec,TestimonialsSec
 } from "../components/pagesExport";
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <HeroSection />
       <ShortIntroSection />
       <HomeCardsSec />
+      {/* <TestimonialsSec /> */}
     </main>
   );
 };

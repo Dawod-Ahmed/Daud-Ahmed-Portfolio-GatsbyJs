@@ -16,10 +16,10 @@ const Pages = () => {
         {/* <h1>Pages</h1> */}
 
         {/* <Home /> */}
-        <AboutMe />
+        {/* <AboutMe /> */}
         {/* <Portfolio /> */}
         {/* <Services /> */}
-        {/* <ContactPage /> */}
+        <ContactPage />
       </div>
     </>
   );
